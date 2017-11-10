@@ -29,6 +29,7 @@ public class Category {
 	private int id;
 
 	private String name;
+	private Set<Book> books = new HashSet<Book>();
 
 	@Column(name = "name")
 	public String getName() {
@@ -52,5 +53,15 @@ public class Category {
 	public String toString()
 	{
 		return "Category: { ID:"+this.id + ", Name: " + this.name + "} "; 
+	}
+
+	 @OneToMany(mappedBy = "category", cascade=CascadeType.ALL, 
+		        orphanRemoval=true)
+	public Set<Book> getBooks() {
+		return books;
+	}
+
+	public void setBooks(Set<Book> books) {
+		this.books = books;
 	}
 }

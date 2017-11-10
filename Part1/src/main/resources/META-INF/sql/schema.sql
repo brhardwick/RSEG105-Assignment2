@@ -41,7 +41,9 @@ CREATE TABLE IF NOT EXISTS `RSEG105`.`author_book` (
         ON DELETE CASCADE ON UPDATE CASCADE
 )  ENGINE=INNODB;
 
- 
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (1,'Brad', 'Hardwick','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (2,'John', 'Doe','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (3,'Jane', 'Dez','Author 1');
 
 INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (1, 'Classics');
 INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (2, 'CookBOOKs');
@@ -56,3 +58,7 @@ INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VAL
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (6, 2, '0393081087', 'The Food Lab', 30.97);
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (7, 4, '1494861992', 'The Egyptian Origins of Western Philosophy', 9.95);
 
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (1,1);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (2,1);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (3,1);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (1,2);

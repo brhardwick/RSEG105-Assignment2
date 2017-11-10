@@ -6,5 +6,6 @@ import rseg105.project2.part1.models.*;
 public interface BookDao {
 
 	  List<Book> getAll();
+	  Book getByID(int Id);
 	    
 }
