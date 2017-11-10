@@ -30,7 +30,6 @@ public class CategoryDaoImpl implements CategoryDao {
 	}
 
 	@Override
-	@SuppressWarnings("unchecked")
 	@Transactional(readOnly = true)
 	public Category getByID(int id) {
 		return (Category) sessionFactory.getCurrentSession().

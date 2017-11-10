@@ -23,7 +23,7 @@ import javax.persistence.NamedQuery;
 
 @Entity // means Contact is a mapped entity class
 @Table(name = "category")
-@NamedQueries({ @NamedQuery(name = "Category.getByID", query = "from Category c where c.id = :id") })
+@NamedQueries({ @NamedQuery(name = "Category.findById", query = "from Category c where c.id = :id") })
 public class Category {
 
 	private int id;

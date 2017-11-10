@@ -7,5 +7,6 @@ public interface BookDao {
 
 	  List<Book> getAll();
 	  Book getByID(int Id);
-	    
+	  void delete(Book book);
+	  Book save(Book book);	    
 }

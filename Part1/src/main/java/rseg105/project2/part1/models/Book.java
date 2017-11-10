@@ -61,14 +61,7 @@ public class Book {
 		return "Book: { ID:"+this.id + ", Title: " + this.title + "} "; 
 	}
 
-	@Column(name = "category_id")
-	public int getCategory_id() {
-		return category_id;
-	}
-
-	public void setCategory_id(int category_id) {
-		this.category_id = category_id;
-	}
+	
 
 	  @ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	    @JoinTable(name = "author_book",
@@ -81,6 +74,15 @@ public class Book {
 	public void setAuthors(Set<Author> authors) {
 		this.authors = authors;
 	}
+	
+	public void addAuthor(Author Author) {
+        getAuthors().add(Author);
+    }
+    
+    public void removeAuthor(Author Author) {
+        getAuthors().remove(Author);
+    }
+
 
 	 @ManyToOne
 	 @JoinColumn(name = "CATEGORY_ID")

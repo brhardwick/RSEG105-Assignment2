@@ -1,0 +1,1183 @@
+
+C:\School\Assignment2\Part1>call mvn clean package 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Assignment2.1 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Assignment2.1 ---
+[INFO] Deleting C:\School\Assignment2\Part1\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Assignment2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Assignment2.1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to C:\School\Assignment2\Part1\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Assignment2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\School\Assignment2\Part1\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Assignment2.1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Assignment2.1 ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ Assignment2.1 ---
+[INFO] Building jar: C:\School\Assignment2\Part1\target\Assignment2.1-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ Assignment2.1 ---
+[INFO] Including org.springframework:spring-context:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-aop:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including aopalliance:aopalliance:jar:1.0 in the shaded jar.
+[INFO] Including org.springframework:spring-beans:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-core:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.1.3 in the shaded jar.
+[INFO] Including org.springframework:spring-expression:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-tx:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-context-support:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[INFO] Including org.hibernate:hibernate-entitymanager:jar:4.2.1.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.1.0.GA in the shaded jar.
+[INFO] Including org.hibernate:hibernate-core:jar:4.2.1.Final in the shaded jar.
+[INFO] Including antlr:antlr:jar:2.7.7 in the shaded jar.
+[INFO] Including dom4j:dom4j:jar:1.6.1 in the shaded jar.
+[INFO] Including org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final in the shaded jar.
+[INFO] Including org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.15.0-GA in the shaded jar.
+[INFO] Including org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final in the shaded jar.
+[INFO] Including mysql:mysql-connector-java:jar:5.1.6 in the shaded jar.
+[INFO] Including org.springframework:spring-orm:maven-plugin:4.0.2.RELEASE in the shaded jar.
+[INFO] Including org.springframework:spring-jdbc:jar:4.0.2.RELEASE in the shaded jar.
+[INFO] Including commons-dbcp:commons-dbcp:jar:1.4 in the shaded jar.
+[INFO] Including commons-pool:commons-pool:jar:1.5.4 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\School\Assignment2\Part1\target\Assignment2.1-0.0.1-SNAPSHOT.jar with C:\School\Assignment2\Part1\target\Assignment2.1-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\School\Assignment2\Part1\dependency-reduced-pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 15.265 s
+[INFO] Finished at: 2017-11-10T12:19:04-05:00
+[INFO] Final Memory: 21M/324M
+[INFO] ------------------------------------------------------------------------
+12:19:10.825 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+12:19:10.854 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1a451d4d
+12:19:10.854 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1a451d4d
+12:19:10.854 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1a451d4d
+12:19:10.855 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5e0826e7
+12:19:10.856 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@158da8e
+12:19:10.857 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@7c729a55
+12:19:10.862 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2e005c4b
+12:19:10.862 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2e005c4b
+12:19:10.862 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2e005c4b
+12:19:10.864 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@359f7cdf
+12:19:10.864 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@359f7cdf
+12:19:10.864 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@359f7cdf
+12:19:10.866 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4fb61f4a
+12:19:10.866 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4fb61f4a
+12:19:10.866 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4fb61f4a
+12:19:10.867 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6379eb
+12:19:10.867 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6379eb
+12:19:10.868 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6379eb
+12:19:10.869 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5876a9af
+12:19:10.869 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5876a9af
+12:19:10.870 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5876a9af
+12:19:10.872 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@515aebb0
+12:19:10.872 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@515aebb0
+12:19:10.872 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@515aebb0
+12:19:10.874 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@16293aa2
+12:19:10.874 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@16293aa2
+12:19:10.874 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@16293aa2
+12:19:10.876 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3a93b025
+12:19:10.876 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3a93b025
+12:19:10.877 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@564fabc8
+12:19:10.877 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@564fabc8
+12:19:10.879 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@223d2c72
+12:19:10.879 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@223d2c72
+12:19:10.880 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@10e31a9a
+12:19:10.881 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@57a3af25
+12:19:10.882 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@c8c12ac
+12:19:10.882 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@c8c12ac
+12:19:10.885 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1b7cc17c
+12:19:10.885 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1b7cc17c
+12:19:10.887 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2f9f7dcf
+12:19:10.887 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2f9f7dcf
+12:19:10.889 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7d8995e
+12:19:10.890 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7d8995e
+12:19:10.890 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7d8995e
+12:19:10.892 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@293a5bf6
+12:19:10.894 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@3c19aaa5
+12:19:10.894 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3c19aaa5
+12:19:10.894 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3c19aaa5
+12:19:10.895 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@38d8f54a
+12:19:10.897 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@35d019a3
+12:19:10.897 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@35d019a3
+12:19:10.899 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@145f66e3
+12:19:10.899 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@145f66e3
+12:19:10.901 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4135c3b
+12:19:10.901 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4135c3b
+12:19:10.902 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5c6648b0
+12:19:10.902 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5c6648b0
+12:19:10.904 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@692f203f
+12:19:10.905 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@692f203f
+12:19:10.906 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@a1153bc
+12:19:10.906 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@3270d194
+12:19:10.908 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@14cd1699
+12:19:10.908 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@14cd1699
+12:19:10.908 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@14cd1699
+12:19:10.910 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4802796d
+12:19:10.910 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4802796d
+12:19:10.910 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4802796d
+12:19:10.911 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1bb5a082
+12:19:10.912 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@33d512c1
+12:19:10.912 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@33d512c1
+12:19:10.912 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@33d512c1
+12:19:10.914 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@765d7657
+12:19:10.914 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@765d7657
+12:19:10.914 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@765d7657
+12:19:10.915 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@5e0e82ae
+12:19:10.916 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@2b71e916
+12:19:10.922 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@38425407
+12:19:10.923 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@38425407
+12:19:10.924 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a6cb05c
+12:19:10.928 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6989da5e
+12:19:10.928 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6989da5e
+12:19:10.931 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@179ece50
+12:19:10.931 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@179ece50
+12:19:10.932 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1fa121e2
+12:19:10.933 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@62ddbd7e
+12:19:10.934 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@489115ef
+12:19:10.937 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@3d285d7e
+12:19:10.938 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3d285d7e
+12:19:10.938 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@367ffa75
+12:19:10.939 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@49438269
+12:19:10.939 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@ba2f4ec
+12:19:10.939 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1c1bbc4e
+12:19:10.939 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@55fe41ea
+12:19:10.939 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@fbd1f6
+12:19:10.940 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1ce24091
+12:19:10.940 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5dda768f
+12:19:10.959 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+12:19:10.964 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.2.1.Final}
+12:19:10.966 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+12:19:10.967 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+12:19:10.978 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+12:19:10.979 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+12:19:10.980 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+12:19:10.980 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+12:19:10.981 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+12:19:10.982 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+12:19:10.983 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+12:19:10.984 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+12:19:10.984 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+12:19:10.985 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+12:19:10.985 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+12:19:10.986 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+12:19:10.987 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+12:19:10.988 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+12:19:10.989 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+12:19:11.041 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+12:19:11.074 [main] DEBUG org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+12:19:11.110 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+12:19:11.110 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+12:19:11.115 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: rseg105.project2.part1.models.Author
+12:19:11.145 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:19:11.147 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+12:19:11.154 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Author
+12:19:12.162 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity rseg105.project2.part1.models.Author on table author
+12:19:12.183 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(author), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+12:19:12.188 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+12:19:12.190 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+12:19:12.192 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+12:19:12.196 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(author), mappingColumn=DESCRIPTION, insertable=true, updatable=true, unique=false}
+12:19:12.196 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property description with lazy=false
+12:19:12.197 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for description
+12:19:12.197 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property description
+12:19:12.197 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(author), mappingColumn=FIRST_NAME, insertable=true, updatable=true, unique=false}
+12:19:12.197 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+12:19:12.198 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstname
+12:19:12.198 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstname
+12:19:12.198 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(author), mappingColumn=LAST_NAME, insertable=true, updatable=true, unique=false}
+12:19:12.198 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastname with lazy=false
+12:19:12.198 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastname
+12:19:12.198 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastname
+12:19:12.200 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: rseg105.project2.part1.models.Book
+12:19:12.201 [main] DEBUG o.h.cfg.annotations.QueryBinder - Binding named query: Book.getAll => from Book
+12:19:12.201 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:19:12.202 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+12:19:12.202 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Book
+12:19:12.203 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity rseg105.project2.part1.models.Book on table book
+12:19:12.215 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:19:12.215 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+12:19:12.215 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+12:19:12.216 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+12:19:12.217 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=null, insertable=true, updatable=true, unique=false}
+12:19:12.224 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=element, insertable=true, updatable=true, unique=false}
+12:19:12.225 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=authors_KEY, insertable=true, updatable=true, unique=false}
+12:19:12.226 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='authors_KEY', referencedColumn='null', mappedBy='null'}
+12:19:12.245 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='BOOK_ID', referencedColumn='', mappedBy=''}
+12:19:12.245 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='AUTHOR_ID', referencedColumn='', mappedBy=''}
+12:19:12.246 [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: rseg105.project2.part1.models.Book.authors
+12:19:12.248 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property authors
+12:19:12.248 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='CATEGORY_ID', referencedColumn='', mappedBy=''}
+12:19:12.248 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=category, insertable=true, updatable=true, unique=false}
+12:19:12.250 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property category
+12:19:12.250 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(book), mappingColumn=title, insertable=true, updatable=true, unique=false}
+12:19:12.251 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property title with lazy=false
+12:19:12.251 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for title
+12:19:12.251 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property title
+12:19:12.251 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: rseg105.project2.part1.models.Category
+12:19:12.251 [main] DEBUG o.h.cfg.annotations.QueryBinder - Binding named query: Category.findById => from Category c where c.id = :id
+12:19:12.251 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+12:19:12.252 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+12:19:12.252 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Category
+12:19:12.252 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity rseg105.project2.part1.models.Category on table category
+12:19:12.256 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=id, insertable=true, updatable=true, unique=false}
+12:19:12.256 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+12:19:12.256 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+12:19:12.256 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+12:19:12.256 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='category'}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=books, insertable=true, updatable=true, unique=false}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=null, insertable=true, updatable=true, unique=false}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=element, insertable=true, updatable=true, unique=false}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=books_KEY, insertable=true, updatable=true, unique=false}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='books_KEY', referencedColumn='null', mappedBy='null'}
+12:19:12.257 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='category'}
+12:19:12.258 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='category'}
+12:19:12.258 [main] DEBUG o.h.cfg.annotations.CollectionBinder - Collection role: rseg105.project2.part1.models.Category.books
+12:19:12.258 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property books
+12:19:12.258 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(category), mappingColumn=name, insertable=true, updatable=true, unique=false}
+12:19:12.258 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+12:19:12.258 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+12:19:12.258 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+12:19:12.259 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+12:19:12.259 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for description
+12:19:12.259 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for firstname
+12:19:12.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for lastname
+12:19:12.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+12:19:12.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for title
+12:19:12.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+12:19:12.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for name
+12:19:12.261 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+12:19:12.267 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+12:19:12.267 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+12:19:12.267 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+12:19:12.267 [main] DEBUG o.hibernate.cfg.CollectionSecondPass - Second pass for collection: rseg105.project2.part1.models.Book.authors
+12:19:12.267 [main] DEBUG o.h.cfg.annotations.CollectionBinder - Binding as ManyToMany: rseg105.project2.part1.models.Book.authors
+12:19:12.306 [main] DEBUG o.hibernate.cfg.CollectionSecondPass - Mapped collection key: BOOK_ID, element: AUTHOR_ID
+12:19:12.306 [main] DEBUG o.hibernate.cfg.CollectionSecondPass - Second pass for collection: rseg105.project2.part1.models.Category.books
+12:19:12.307 [main] DEBUG o.h.cfg.annotations.CollectionBinder - Binding a OneToMany: rseg105.project2.part1.models.Category.books through a foreign key
+12:19:12.307 [main] DEBUG o.h.cfg.annotations.CollectionBinder - Mapping collection: rseg105.project2.part1.models.Category.books -> book
+12:19:12.307 [main] DEBUG o.h.cfg.annotations.TableBinder - Retrieving property rseg105.project2.part1.models.Book.category
+12:19:12.307 [main] DEBUG o.hibernate.cfg.CollectionSecondPass - Mapped collection key: CATEGORY_ID, one-to-many: rseg105.project2.part1.models.Book
+12:19:12.307 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+12:19:12.307 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+12:19:12.307 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+12:19:12.307 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+12:19:12.308 [main] DEBUG org.hibernate.cfg.Configuration - Resolving reference to class: rseg105.project2.part1.models.Author
+12:19:12.308 [main] DEBUG org.hibernate.cfg.Configuration - Resolving reference to class: rseg105.project2.part1.models.Book
+12:19:12.308 [main] DEBUG org.hibernate.cfg.Configuration - Resolving reference to class: rseg105.project2.part1.models.Category
+12:19:12.931 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Database ->
+       name : MySQL
+    version : 5.7.20-log
+      major : 5
+      minor : 7
+12:19:12.931 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.6 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1
+12:19:12.931 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - JDBC version : 3.0
+12:19:12.946 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:19:12.952 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch size: 10
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+12:19:12.961 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+12:19:12.962 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC result set fetch size: 50
+12:19:12.962 [main] DEBUG org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+12:19:12.962 [main] DEBUG org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+12:19:12.962 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 3
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+12:19:12.964 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+12:19:12.965 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default null ordering: none
+12:19:12.965 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+12:19:12.966 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+12:19:12.966 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+12:19:12.966 [main] DEBUG org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+12:19:12.966 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+12:19:12.966 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query cache: disabled
+12:19:12.966 [main] DEBUG org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - Statistics: disabled
+12:19:12.967 [main] DEBUG org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+12:19:12.968 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+12:19:12.968 [main] DEBUG org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+12:19:12.968 [main] DEBUG org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+12:19:12.968 [main] DEBUG org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+12:19:12.968 [main] DEBUG org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+12:19:12.987 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+12:19:12.994 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+12:19:12.994 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_141\bin, java.vm.version=25.141-b15, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\School\Assignment2\Part1, java.runtime.version=1.8.0_141-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_141\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Z50BXH\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=Cp1252, hibernate.jdbc.fetch_size=50, java.library.path=C:\Program Files\Java\jre1.8.0_141\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\apache-maven-3.5.2\bin;C:\Program Files\Java\jre1.8.0_141\bin;C:\Program Files (x86)\Oracle\jre\1.1.7\bin\;C:\Program Files (x86)\Oracle\jre\1.1.8\bin\;C:\Program Files (x86)\Oracle\jre\1.3.1\bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Oracle\Ora92\bin;C:\Program Files (x86)\Hyland\Web ActiveX\;C:\Program Files (x86)\Intel\UCRT\;C:\Program Files\Intel\UCRT\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\curl;C:\Users\Z50BXH\AppData\Local\Programs\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Users\Z50BXH\AppData\Local\Programs\Python\Python36-32\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Oracle\jre\1.1.7\bin\;C:\Program Files (x86)\Oracle\jre\1.1.8\bin\;C:\Program Files (x86)\Oracle\jre\1.3.1\bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Oracle\Ora92\bin;C:\Program Files (x86)\Hyland\Web ActiveX\;C:\Program Files (x86)\Intel\UCRT\;C:\Program Files\Intel\UCRT\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\curl;C:\Users\Z50BXH\AppData\Local\Programs\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\Z50BXH\AppData\Local\Programs\Python\Python36-32\;C:\Program Files (x86)\Microsoft VS Code\bin;., hibernate.connection.datasource=org.apache.commons.dbcp.BasicDataSource@181e731e, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Z50BXH, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.8, file.encoding=Cp1252, user.name=Z50BXH, java.class.path=target/Assignment2.1-0.0.1-SNAPSHOT.jar, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@55f96302, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jre1.8.0_141, sun.java.command=target/Assignment2.1-0.0.1-SNAPSHOT.jar, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_141, java.ext.dirs=C:\Program Files\Java\jre1.8.0_141\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_141\lib\resources.jar;C:\Program Files\Java\jre1.8.0_141\lib\rt.jar;C:\Program Files\Java\jre1.8.0_141\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_141\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_141\lib\jce.jar;C:\Program Files\Java\jre1.8.0_141\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_141\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_141\classes, sun.stderr.encoding=cp437, java.vendor=Oracle Corporation, hibernate.jdbc.batch_size=10, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, hibernate.max_fetch_depth=3, sun.cpu.isalist=amd64}
+12:19:13.012 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+12:19:13.012 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+12:19:13.012 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+12:19:13.147 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: rseg105.project2.part1.models.Author
+12:19:13.147 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select ID from author where ID =?
+12:19:13.147 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select author_.ID, author_.DESCRIPTION as DESCRIPT2_0_, author_.FIRST_NAME as FIRST3_0_, author_.LAST_NAME as LAST4_0_ from author author_ where author_.ID=?
+12:19:13.148 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into author (DESCRIPTION, FIRST_NAME, LAST_NAME, ID) values (?, ?, ?, ?)
+12:19:13.148 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update author set DESCRIPTION=?, FIRST_NAME=?, LAST_NAME=? where ID=?
+12:19:13.148 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from author where ID=?
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: rseg105.project2.part1.models.Book
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select id from book where id =?
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select book_.id, book_.CATEGORY_ID as CATEGORY3_2_, book_.title as title2_2_ from book book_ where book_.id=?
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into book (CATEGORY_ID, title, id) values (?, ?, ?)
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update book set CATEGORY_ID=?, title=? where id=?
+12:19:13.153 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from book where id=?
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: rseg105.project2.part1.models.Category
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select id from category where id =?
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select category_.id, category_.name as name2_3_ from category category_ where category_.id=?
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into category (name, id) values (?, ?)
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update category set name=? where id=?
+12:19:13.157 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from category where id=?
+12:19:13.165 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Static SQL for collection: rseg105.project2.part1.models.Book.authors
+12:19:13.165 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row insert: insert into author_book (BOOK_ID, AUTHOR_ID) values (?, ?)
+12:19:13.165 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row update: update author_book set AUTHOR_ID=? where BOOK_ID=? and AUTHOR_ID=?
+12:19:13.165 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row delete: delete from author_book where BOOK_ID=? and AUTHOR_ID=?
+12:19:13.166 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  One-shot delete: delete from author_book where BOOK_ID=?
+12:19:13.167 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Static SQL for collection: rseg105.project2.part1.models.Category.books
+12:19:13.168 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row insert: update book set CATEGORY_ID=? where id=?
+12:19:13.168 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row update: update book set  where id=?
+12:19:13.168 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  Row delete: update book set CATEGORY_ID=null where CATEGORY_ID=? and id=?
+12:19:13.168 [main] DEBUG o.h.p.c.AbstractCollectionPersister -  One-shot delete: update book set CATEGORY_ID=null where CATEGORY_ID=?
+12:19:13.184 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [NONE]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.185 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [READ]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.185 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [UPGRADE]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? for update
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [UPGRADE_NOWAIT]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? for update
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [FORCE]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? for update
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [PESSIMISTIC_READ]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? lock in share mode
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [PESSIMISTIC_WRITE]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? for update
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [PESSIMISTIC_FORCE_INCREMENT]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=? for update
+12:19:13.186 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [OPTIMISTIC]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.187 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Author [OPTIMISTIC_FORCE_INCREMENT]: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.190 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity rseg105.project2.part1.models.Author: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.191 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity rseg105.project2.part1.models.Author: select author0_.ID as ID1_0_0_, author0_.DESCRIPTION as DESCRIPT2_0_0_, author0_.FIRST_NAME as FIRST3_0_0_, author0_.LAST_NAME as LAST4_0_0_ from author author0_ where author0_.ID=?
+12:19:13.194 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [NONE]: select book0_.id as id1_2_2_, book0_.CATEGORY_ID as CATEGORY3_2_2_, book0_.title as title2_2_2_, authors1_.BOOK_ID as BOOK1_2_4_, author2_.ID as AUTHOR2_1_4_, author2_.ID as ID1_0_0_, author2_.DESCRIPTION as DESCRIPT2_0_0_, author2_.FIRST_NAME as FIRST3_0_0_, author2_.LAST_NAME as LAST4_0_0_, category3_.id as id1_3_1_, category3_.name as name2_3_1_ from book book0_ left outer join author_book authors1_ on book0_.id=authors1_.BOOK_ID left outer join author author2_ on authors1_.AUTHOR_ID=author2_.ID left outer join category category3_ on book0_.CATEGORY_ID=category3_.id where book0_.id=?
+12:19:13.195 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [READ]: select book0_.id as id1_2_2_, book0_.CATEGORY_ID as CATEGORY3_2_2_, book0_.title as title2_2_2_, authors1_.BOOK_ID as BOOK1_2_4_, author2_.ID as AUTHOR2_1_4_, author2_.ID as ID1_0_0_, author2_.DESCRIPTION as DESCRIPT2_0_0_, author2_.FIRST_NAME as FIRST3_0_0_, author2_.LAST_NAME as LAST4_0_0_, category3_.id as id1_3_1_, category3_.name as name2_3_1_ from book book0_ left outer join author_book authors1_ on book0_.id=authors1_.BOOK_ID left outer join author author2_ on authors1_.AUTHOR_ID=author2_.ID left outer join category category3_ on book0_.CATEGORY_ID=category3_.id where book0_.id=?
+12:19:13.195 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [UPGRADE]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? for update
+12:19:13.195 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [UPGRADE_NOWAIT]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? for update
+12:19:13.196 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [FORCE]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? for update
+12:19:13.196 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [PESSIMISTIC_READ]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? lock in share mode
+12:19:13.196 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [PESSIMISTIC_WRITE]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? for update
+12:19:13.196 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [PESSIMISTIC_FORCE_INCREMENT]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=? for update
+12:19:13.197 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [OPTIMISTIC]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=?
+12:19:13.197 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Book [OPTIMISTIC_FORCE_INCREMENT]: select book0_.id as id1_2_0_, book0_.CATEGORY_ID as CATEGORY3_2_0_, book0_.title as title2_2_0_ from book book0_ where book0_.id=?
+12:19:13.198 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity rseg105.project2.part1.models.Book: select book0_.id as id1_2_1_, book0_.CATEGORY_ID as CATEGORY3_2_1_, book0_.title as title2_2_1_, authors1_.BOOK_ID as BOOK1_2_3_, author2_.ID as AUTHOR2_1_3_, author2_.ID as ID1_0_0_, author2_.DESCRIPTION as DESCRIPT2_0_0_, author2_.FIRST_NAME as FIRST3_0_0_, author2_.LAST_NAME as LAST4_0_0_ from book book0_ left outer join author_book authors1_ on book0_.id=authors1_.BOOK_ID left outer join author author2_ on authors1_.AUTHOR_ID=author2_.ID where book0_.id=?
+12:19:13.198 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity rseg105.project2.part1.models.Book: select book0_.id as id1_2_1_, book0_.CATEGORY_ID as CATEGORY3_2_1_, book0_.title as title2_2_1_, authors1_.BOOK_ID as BOOK1_2_3_, author2_.ID as AUTHOR2_1_3_, author2_.ID as ID1_0_0_, author2_.DESCRIPTION as DESCRIPT2_0_0_, author2_.FIRST_NAME as FIRST3_0_0_, author2_.LAST_NAME as LAST4_0_0_ from book book0_ left outer join author_book authors1_ on book0_.id=authors1_.BOOK_ID left outer join author author2_ on authors1_.AUTHOR_ID=author2_.ID where book0_.id=?
+12:19:13.199 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [NONE]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.199 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [READ]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.199 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [UPGRADE]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? for update
+12:19:13.199 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [UPGRADE_NOWAIT]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? for update
+12:19:13.200 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [FORCE]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? for update
+12:19:13.200 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [PESSIMISTIC_READ]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? lock in share mode
+12:19:13.200 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [PESSIMISTIC_WRITE]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? for update
+12:19:13.200 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [PESSIMISTIC_FORCE_INCREMENT]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=? for update
+12:19:13.201 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [OPTIMISTIC]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.201 [main] DEBUG org.hibernate.loader.Loader - Static select for entity rseg105.project2.part1.models.Category [OPTIMISTIC_FORCE_INCREMENT]: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.201 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity rseg105.project2.part1.models.Category: select category0_.id as id1_3_1_, category0_.name as name2_3_1_, books1_.CATEGORY_ID as CATEGORY3_3_3_, books1_.id as id1_2_3_, books1_.id as id1_2_0_, books1_.CATEGORY_ID as CATEGORY3_2_0_, books1_.title as title2_2_0_ from category category0_ left outer join book books1_ on category0_.id=books1_.CATEGORY_ID where category0_.id=?
+12:19:13.202 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity rseg105.project2.part1.models.Category: select category0_.id as id1_3_1_, category0_.name as name2_3_1_, books1_.CATEGORY_ID as CATEGORY3_3_3_, books1_.id as id1_2_3_, books1_.id as id1_2_0_, books1_.CATEGORY_ID as CATEGORY3_2_0_, books1_.title as title2_2_0_ from category category0_ left outer join book books1_ on category0_.id=books1_.CATEGORY_ID where category0_.id=?
+12:19:13.207 [main] DEBUG o.h.l.c.BasicCollectionLoader - Static select for collection rseg105.project2.part1.models.Book.authors: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.209 [main] DEBUG o.h.l.collection.OneToManyLoader - Static select for one-to-many rseg105.project2.part1.models.Category.books: select books0_.CATEGORY_ID as CATEGORY3_3_1_, books0_.id as id1_2_1_, books0_.id as id1_2_0_, books0_.CATEGORY_ID as CATEGORY3_2_0_, books0_.title as title2_2_0_ from book books0_ where books0_.CATEGORY_ID=?
+12:19:13.211 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@55dfebeb
+12:19:13.211 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 41b1a73a-bcc4-4316-8957-cb3eccff5f58 (<unnamed>)
+12:19:13.211 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+12:19:13.211 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+12:19:13.214 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 2 named HQL queries
+12:19:13.214 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking named query: Category.findById
+12:19:13.288 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from rseg105.project2.part1.models.Category c where c.id = :id
+12:19:13.297 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[DOT] Node: '.'
+    |        |  |  |  +-[DOT] Node: '.'
+    |        |  |  |  |  +-[IDENT] Node: 'rseg105'
+    |        |  |  |  |  \-[IDENT] Node: 'project2'
+    |        |  |  |  \-[IDENT] Node: 'part1'
+    |        |  |  \-[IDENT] Node: 'models'
+    |        |  \-[IDENT] Node: 'Category'
+    |        \-[ALIAS] Node: 'c'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'c'
+          |  \-[IDENT] Node: 'id'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'id'
+
+12:19:13.297 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.316 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+12:19:13.327 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : rseg105.project2.part1.models.Category (c) -> category0_
+12:19:13.328 [main] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : c -> category0_.id
+12:19:13.329 [main] DEBUG o.h.hql.internal.ast.tree.DotNode - getDataType() : id -> org.hibernate.type.IntegerType@6379eb
+12:19:13.330 [main] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : c.id -> category0_.id
+12:19:13.331 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+12:19:13.332 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} category category0_ ) ( where ( = ( category0_.id category0_.id id ) ? ) ) )
+12:19:13.335 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+12:19:13.338 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [category category0_]
+12:19:13.339 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+12:19:13.339 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (category)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'category0_.id as id1_3_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=c,role=null,tableName=category,tableAlias=category0_,origin=null,columns={,className=rseg105.project2.part1.models.Category}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'category0_.name as name2_3_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[c], fromElementByTableAlias=[category0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'category category0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=c,role=null,tableName=category,tableAlias=category0_,origin=null,columns={,className=rseg105.project2.part1.models.Category}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'category0_.id' {propertyName=id,dereferenceType=ALL,propertyPath=id,path=c.id,tableAlias=category0_,className=rseg105.project2.part1.models.Category,classAlias=c}
+          |  +-[ALIAS_REF] IdentNode: 'category0_.id' {alias=c, className=rseg105.project2.part1.models.Category, tableAlias=category0_}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=id, expectedType=org.hibernate.type.IntegerType@6379eb}
+
+12:19:13.339 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.346 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from rseg105.project2.part1.models.Category c where c.id = :id
+12:19:13.346 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select category0_.id as id1_3_, category0_.name as name2_3_ from category category0_ where category0_.id=?
+12:19:13.346 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.352 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking named query: Book.getAll
+12:19:13.352 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from rseg105.project2.part1.models.Book
+12:19:13.354 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'rseg105'
+                |  |  |  \-[IDENT] Node: 'project2'
+                |  |  \-[IDENT] Node: 'part1'
+                |  \-[IDENT] Node: 'models'
+                \-[IDENT] Node: 'Book'
+
+12:19:13.354 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.354 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+12:19:13.354 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : rseg105.project2.part1.models.Book (<no alias>) -> book0_
+12:19:13.354 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+12:19:13.354 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} book book0_ ) )
+12:19:13.355 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+12:19:13.355 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [book book0_]
+12:19:13.355 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+12:19:13.355 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (book)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'book0_.id as id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=book,tableAlias=book0_,origin=null,columns={,className=rseg105.project2.part1.models.Book}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[book0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'book book0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=book,tableAlias=book0_,origin=null,columns={,className=rseg105.project2.part1.models.Book}}
+
+12:19:13.356 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.356 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from rseg105.project2.part1.models.Book
+12:19:13.356 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+12:19:13.356 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.356 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 0 named SQL queries
+12:19:13.361 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+12:19:13.482 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.482 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.485 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.486 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.486 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.526 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+12:19:13.567 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.571 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#2]
+12:19:13.577 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+12:19:13.578 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#3]
+12:19:13.578 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+12:19:13.578 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#4]
+12:19:13.578 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+12:19:13.578 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#5]
+12:19:13.579 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+12:19:13.579 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#6]
+12:19:13.579 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+12:19:13.579 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#7]
+12:19:13.580 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#2]
+12:19:13.589 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#3]
+12:19:13.589 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.592 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.592 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#3]
+12:19:13.592 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#3]
+12:19:13.593 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#3]
+12:19:13.594 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.594 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#2]
+12:19:13.595 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#3]
+12:19:13.595 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#3]
+12:19:13.596 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#4]
+12:19:13.596 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#1]
+12:19:13.596 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.597 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.598 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.598 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.598 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.598 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.598 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#4]
+12:19:13.598 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#5]
+12:19:13.599 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#5]
+12:19:13.599 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#6]
+12:19:13.599 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#2]
+12:19:13.599 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.600 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.600 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#2]
+12:19:13.600 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#2]
+12:19:13.600 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#2]
+12:19:13.600 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.600 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#6]
+12:19:13.601 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#7]
+12:19:13.601 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#4]
+12:19:13.601 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.602 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.602 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#4]
+12:19:13.602 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#4]
+12:19:13.603 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#4]
+12:19:13.603 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.603 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#7]
+12:19:13.604 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.604 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.608 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.610 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.610 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.610 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.610 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.611 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.611 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.612 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.612 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.612 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.612 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.612 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.612 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.612 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.613 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.614 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.614 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.614 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.614 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.614 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.614 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.615 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.616 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.616 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.616 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.616 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.616 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.616 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.617 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.617 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.617 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.617 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.617 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.617 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.617 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.619 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.619 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.619 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Author#1]
+12:19:13.619 [main] DEBUG org.hibernate.loader.Loader - Found row of collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.620 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Author#1]
+12:19:13.620 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Author#1]
+12:19:13.620 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.620 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.620 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.620 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.621 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.623 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.624 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.625 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.626 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Books without Details:
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:2, Title: 1426218648} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:3, Title: Rocks, Minerals & Gems} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:4, Title: The Great Gatsby} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:5, Title: To Kill a Mockingbird} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:6, Title: The Food Lab} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:7, Title: The Egyptian Origins of Western Philosophy} 
+12:19:13.665 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.665 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.665 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.665 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.665 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.665 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.666 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+12:19:13.668 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.668 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#2]
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#3]
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#4]
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#5]
+12:19:13.669 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+12:19:13.670 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#6]
+12:19:13.670 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+12:19:13.670 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#7]
+12:19:13.670 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#2]
+12:19:13.671 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#3]
+12:19:13.671 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.672 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.672 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#3]
+12:19:13.672 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#3]
+12:19:13.672 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#3]
+12:19:13.673 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.673 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#2]
+12:19:13.673 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#3]
+12:19:13.673 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#3]
+12:19:13.673 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#4]
+12:19:13.673 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#1]
+12:19:13.673 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.674 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.675 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.675 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.675 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.675 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.675 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#4]
+12:19:13.676 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#5]
+12:19:13.676 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#5]
+12:19:13.676 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#6]
+12:19:13.676 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#2]
+12:19:13.676 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.677 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.678 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#2]
+12:19:13.678 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#2]
+12:19:13.678 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#2]
+12:19:13.678 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.678 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#6]
+12:19:13.678 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#7]
+12:19:13.679 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#4]
+12:19:13.679 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.680 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.680 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#4]
+12:19:13.681 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#4]
+12:19:13.681 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#4]
+12:19:13.681 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.681 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#7]
+12:19:13.681 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.681 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.682 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.682 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.683 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.683 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.683 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.683 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.683 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.684 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.684 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.684 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.685 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.685 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.685 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.685 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.687 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.687 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.688 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.688 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.688 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.688 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.688 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.690 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.690 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.690 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.690 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.690 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.691 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.691 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.693 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.694 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.694 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.694 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.694 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.694 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.694 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.695 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.696 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.696 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Author#1]
+12:19:13.697 [main] DEBUG org.hibernate.loader.Loader - Found row of collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.697 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Author#1]
+12:19:13.697 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Author#1]
+12:19:13.697 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.697 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.697 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.698 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.698 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.698 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.698 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.699 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.700 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.700 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.700 [main] INFO  rseg105.project2.part1.app.Tests - Books with details:
+12:19:13.700 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.700 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:2, Title: 1426218648} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Author: { ID:1, First Name: Brad, Last Name: Hardwick} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:3, Name: Science} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:3, Title: Rocks, Minerals & Gems} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:3, Name: Science} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:4, Title: The Great Gatsby} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:1, Name: Classics} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:5, Title: To Kill a Mockingbird} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:1, Name: Classics} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:6, Title: The Food Lab} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:2, Name: CookBOOKs} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:7, Title: The Egyptian Origins of Western Philosophy} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:4, Name: History} 
+12:19:13.701 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.702 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.702 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.702 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.702 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.702 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.704 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from rseg105.project2.part1.models.Book b where b.id = :id
+12:19:13.706 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[DOT] Node: '.'
+    |        |  |  |  +-[DOT] Node: '.'
+    |        |  |  |  |  +-[IDENT] Node: 'rseg105'
+    |        |  |  |  |  \-[IDENT] Node: 'project2'
+    |        |  |  |  \-[IDENT] Node: 'part1'
+    |        |  |  \-[IDENT] Node: 'models'
+    |        |  \-[IDENT] Node: 'Book'
+    |        \-[ALIAS] Node: 'b'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'b'
+          |  \-[IDENT] Node: 'id'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'id'
+
+12:19:13.706 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.707 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+12:19:13.708 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : rseg105.project2.part1.models.Book (b) -> book0_
+12:19:13.708 [main] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : b -> book0_.id
+12:19:13.711 [main] DEBUG o.h.hql.internal.ast.tree.DotNode - getDataType() : id -> org.hibernate.type.IntegerType@6379eb
+12:19:13.711 [main] DEBUG o.h.h.i.ast.tree.FromReferenceNode - Resolved : b.id -> book0_.id
+12:19:13.712 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+12:19:13.712 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} book book0_ ) ( where ( = ( book0_.id book0_.id id ) ? ) ) )
+12:19:13.712 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+12:19:13.712 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [book book0_]
+12:19:13.712 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+12:19:13.713 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (book)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'book0_.id as id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=b,role=null,tableName=book,tableAlias=book0_,origin=null,columns={,className=rseg105.project2.part1.models.Book}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[b], fromElementByTableAlias=[book0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'book book0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=b,role=null,tableName=book,tableAlias=book0_,origin=null,columns={,className=rseg105.project2.part1.models.Book}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'book0_.id' {propertyName=id,dereferenceType=ALL,propertyPath=id,path=b.id,tableAlias=book0_,className=rseg105.project2.part1.models.Book,classAlias=b}
+          |  +-[ALIAS_REF] IdentNode: 'book0_.id' {alias=b, className=rseg105.project2.part1.models.Book, tableAlias=book0_}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=id, expectedType=org.hibernate.type.IntegerType@6379eb}
+
+12:19:13.713 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.714 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from rseg105.project2.part1.models.Book b where b.id = :id
+12:19:13.714 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+12:19:13.714 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+12:19:13.715 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+12:19:13.717 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.717 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.717 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.718 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.718 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.719 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.719 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.719 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.719 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.719 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.720 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_
+12:19:13.721 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.721 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#2]
+12:19:13.722 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+12:19:13.722 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#3]
+12:19:13.725 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+12:19:13.725 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#4]
+12:19:13.726 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+12:19:13.726 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#5]
+12:19:13.727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+12:19:13.727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#6]
+12:19:13.727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+12:19:13.727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#7]
+12:19:13.727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#2]
+12:19:13.727 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#3]
+12:19:13.728 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.729 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.729 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#3]
+12:19:13.729 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#3]
+12:19:13.729 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#3]
+12:19:13.729 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.729 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#2]
+12:19:13.729 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#3]
+12:19:13.730 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#3]
+12:19:13.730 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#4]
+12:19:13.730 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#1]
+12:19:13.730 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.731 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.731 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.732 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.732 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.732 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.732 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#4]
+12:19:13.733 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#5]
+12:19:13.734 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#5]
+12:19:13.734 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#6]
+12:19:13.734 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#2]
+12:19:13.734 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.736 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.736 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#2]
+12:19:13.736 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#2]
+12:19:13.736 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#2]
+12:19:13.736 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.736 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#6]
+12:19:13.736 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#7]
+12:19:13.736 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#4]
+12:19:13.737 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.738 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.738 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#4]
+12:19:13.738 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#4]
+12:19:13.738 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#4]
+12:19:13.739 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.739 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#7]
+12:19:13.740 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.740 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.741 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.742 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.742 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#7]
+12:19:13.742 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.742 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.742 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.742 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.744 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.745 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.745 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#6]
+12:19:13.745 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.746 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.747 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.747 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.748 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.749 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.749 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#5]
+12:19:13.749 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.749 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.749 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.749 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.751 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.751 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.751 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#4]
+12:19:13.751 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.751 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.751 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.752 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.753 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.755 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.755 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#3]
+12:19:13.755 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.755 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.756 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.756 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.757 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.757 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.757 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Author#1]
+12:19:13.758 [main] DEBUG org.hibernate.loader.Loader - Found row of collection: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.758 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Author#1]
+12:19:13.758 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Author#1]
+12:19:13.758 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.758 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#2]
+12:19:13.758 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.758 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.759 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.759 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.759 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.760 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.761 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Books with details:
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:2, Title: 1426218648} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Author: { ID:1, First Name: Brad, Last Name: Hardwick} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:3, Name: Science} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:3, Title: Rocks, Minerals & Gems} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:3, Name: Science} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:4, Title: The Great Gatsby} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:1, Name: Classics} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:5, Title: To Kill a Mockingbird} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:1, Name: Classics} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:6, Title: The Food Lab} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:2, Name: CookBOOKs} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:7, Title: The Egyptian Origins of Western Philosophy} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:4, Name: History} 
+12:19:13.761 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.762 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.762 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.762 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.762 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.762 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.766 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_, category0_.name as name2_3_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_, category0_.name as name2_3_ from category category0_ where category0_.id=?
+12:19:13.769 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.769 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.771 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.771 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.771 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.772 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.772 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.773 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.773 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.774 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.774 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.774 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.774 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.774 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.778 [main] DEBUG org.hibernate.SQL - select book_.id, book_.CATEGORY_ID as CATEGORY3_2_, book_.title as title2_2_ from book book_ where book_.id=?
+Hibernate: select book_.id, book_.CATEGORY_ID as CATEGORY3_2_, book_.title as title2_2_ from book book_ where book_.id=?
+12:19:13.782 [main] DEBUG o.h.e.i.AbstractSaveEventListener - Generated identifier: 1, using strategy: org.hibernate.id.Assigned
+12:19:13.790 [main] DEBUG org.hibernate.SQL - select category_.id, category_.name as name2_3_ from category category_ where category_.id=?
+Hibernate: select category_.id, category_.name as name2_3_ from category category_ where category_.id=?
+12:19:13.793 [main] DEBUG org.hibernate.SQL - select author_.ID, author_.DESCRIPTION as DESCRIPT2_0_, author_.FIRST_NAME as FIRST3_0_, author_.LAST_NAME as LAST4_0_ from author author_ where author_.ID=?
+Hibernate: select author_.ID, author_.DESCRIPTION as DESCRIPT2_0_, author_.FIRST_NAME as FIRST3_0_, author_.LAST_NAME as LAST4_0_ from author author_ where author_.ID=?
+12:19:13.795 [main] DEBUG o.h.e.i.AbstractSaveEventListener - Generated identifier: 100, using strategy: org.hibernate.id.Assigned
+12:19:13.797 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.798 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+12:19:13.799 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+12:19:13.802 [main] DEBUG o.h.engine.internal.Collections - Collection found: [rseg105.project2.part1.models.Book.authors#1], was: [<unreferenced>] (initialized)
+12:19:13.804 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 2 insertions, 0 updates, 0 deletions to 2 objects
+12:19:13.804 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+12:19:13.806 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+12:19:13.806 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Book{id=1, category=rseg105.project2.part1.models.Category#1, title=A New Book, authors=[rseg105.project2.part1.models.Author#100]}
+12:19:13.806 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Author{firstname=Bradley, description=My First, id=100, lastname=Hadly}
+12:19:13.824 [main] DEBUG org.hibernate.SQL - insert into book (CATEGORY_ID, title, id) values (?, ?, ?)
+Hibernate: insert into book (CATEGORY_ID, title, id) values (?, ?, ?)
+12:19:13.826 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.827 [main] DEBUG org.hibernate.SQL - insert into author (DESCRIPTION, FIRST_NAME, LAST_NAME, ID) values (?, ?, ?, ?)
+Hibernate: insert into author (DESCRIPTION, FIRST_NAME, LAST_NAME, ID) values (?, ?, ?, ?)
+12:19:13.828 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.830 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Inserting collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.830 [main] DEBUG org.hibernate.SQL - insert into author_book (BOOK_ID, AUTHOR_ID) values (?, ?)
+Hibernate: insert into author_book (BOOK_ID, AUTHOR_ID) values (?, ?)
+12:19:13.831 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Done inserting collection: 1 rows inserted
+12:19:13.831 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.866 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.866 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.866 [main] DEBUG o.h.e.j.internal.JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+12:19:13.867 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.867 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.867 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.867 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.867 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.867 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.867 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.868 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+12:19:13.869 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.869 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#1]
+12:19:13.870 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#1]
+12:19:13.870 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#1]
+12:19:13.870 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.871 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.872 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.872 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.872 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.873 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.873 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#1]
+12:19:13.873 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.873 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.877 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.877 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.877 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Author#100]
+12:19:13.878 [main] DEBUG org.hibernate.loader.Loader - Found row of collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.878 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Author#100]
+12:19:13.878 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Author#100]
+12:19:13.878 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.878 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.878 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.878 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.878 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.878 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+12:19:13.879 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+12:19:13.881 [main] DEBUG o.h.engine.internal.Collections - Collection found: [rseg105.project2.part1.models.Book.authors#1], was: [rseg105.project2.part1.models.Book.authors#1] (initialized)
+12:19:13.881 [main] DEBUG o.h.engine.internal.Collections - Collection found: [rseg105.project2.part1.models.Category.books#1], was: [rseg105.project2.part1.models.Category.books#1] (uninitialized)
+12:19:13.881 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+12:19:13.881 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+12:19:13.881 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+12:19:13.881 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Book{id=1, category=rseg105.project2.part1.models.Category#1, title=A New Book, authors=[rseg105.project2.part1.models.Author#100]}
+12:19:13.881 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Category{books=<uninitialized>, name=Classics, id=1}
+12:19:13.881 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Author{firstname=Bradley, description=My First, id=100, lastname=Hadly}
+12:19:13.882 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.882 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.883 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.883 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - Book with detail:
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - ------------------------------
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - Book: { ID:1, Title: A New Book} 
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - Author: { ID:100, First Name: Bradley, Last Name: Hadly} 
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests - Category: { ID:1, Name: Classics} 
+12:19:13.883 [main] INFO  rseg105.project2.part1.app.Tests -           ---                 
+12:19:13.883 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.883 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.883 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.883 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.883 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.884 [main] DEBUG org.hibernate.SQL - select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+Hibernate: select book0_.id as id1_2_, book0_.CATEGORY_ID as CATEGORY3_2_, book0_.title as title2_2_ from book book0_ where book0_.id=?
+12:19:13.885 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.885 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Book#1]
+12:19:13.885 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Book#1]
+12:19:13.885 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [rseg105.project2.part1.models.Category#1]
+12:19:13.886 [main] DEBUG org.hibernate.SQL - select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+Hibernate: select category0_.id as id1_3_0_, category0_.name as name2_3_0_ from category category0_ where category0_.id=?
+12:19:13.887 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.887 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Category#1]
+12:19:13.887 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Category#1]
+12:19:13.887 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Category#1]
+12:19:13.888 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+12:19:13.888 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Book#1]
+12:19:13.888 [main] DEBUG org.hibernate.loader.Loader - Loading collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.888 [main] DEBUG org.hibernate.SQL - select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+Hibernate: select authors0_.BOOK_ID as BOOK1_2_1_, authors0_.AUTHOR_ID as AUTHOR2_1_1_, author1_.ID as ID1_0_0_, author1_.DESCRIPTION as DESCRIPT2_0_0_, author1_.FIRST_NAME as FIRST3_0_0_, author1_.LAST_NAME as LAST4_0_0_ from author_book authors0_ inner join author author1_ on authors0_.AUTHOR_ID=author1_.ID where authors0_.BOOK_ID=?
+12:19:13.889 [main] DEBUG org.hibernate.loader.Loader - Result set contains (possibly empty) collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.889 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+12:19:13.890 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[rseg105.project2.part1.models.Author#100]
+12:19:13.890 [main] DEBUG org.hibernate.loader.Loader - Found row of collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.890 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [rseg105.project2.part1.models.Author#100]
+12:19:13.890 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [rseg105.project2.part1.models.Author#100]
+12:19:13.890 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections were found in result set for role: rseg105.project2.part1.models.Book.authors
+12:19:13.890 [main] DEBUG o.h.e.l.i.CollectionLoadContext - Collection fully initialized: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.890 [main] DEBUG o.h.e.l.i.CollectionLoadContext - 1 collections initialized for role: rseg105.project2.part1.models.Book.authors
+12:19:13.890 [main] DEBUG org.hibernate.loader.Loader - Done loading collection
+12:19:13.890 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.890 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+12:19:13.890 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+12:19:13.891 [main] DEBUG o.h.engine.internal.Collections - Collection found: [rseg105.project2.part1.models.Book.authors#1], was: [rseg105.project2.part1.models.Book.authors#1] (initialized)
+12:19:13.891 [main] DEBUG o.h.engine.internal.Collections - Collection found: [rseg105.project2.part1.models.Category.books#1], was: [rseg105.project2.part1.models.Category.books#1] (uninitialized)
+12:19:13.891 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+12:19:13.891 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+12:19:13.891 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+12:19:13.891 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Book{id=1, category=rseg105.project2.part1.models.Category#1, title=A New Book, authors=[rseg105.project2.part1.models.Author#100]}
+12:19:13.891 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Category{books=<uninitialized>, name=Classics, id=1}
+12:19:13.891 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Author{firstname=Bradley, description=My First, id=100, lastname=Hadly}
+12:19:13.892 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.892 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.893 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.893 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+12:19:13.893 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+12:19:13.893 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+12:19:13.893 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+12:19:13.893 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+12:19:13.893 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+12:19:13.895 [main] DEBUG org.hibernate.SQL - select book_.id, book_.CATEGORY_ID as CATEGORY3_2_, book_.title as title2_2_ from book book_ where book_.id=?
+Hibernate: select book_.id, book_.CATEGORY_ID as CATEGORY3_2_, book_.title as title2_2_ from book book_ where book_.id=?
+12:19:13.898 [main] DEBUG org.hibernate.SQL - select author_.ID, author_.DESCRIPTION as DESCRIPT2_0_, author_.FIRST_NAME as FIRST3_0_, author_.LAST_NAME as LAST4_0_ from author author_ where author_.ID=?
+Hibernate: select author_.ID, author_.DESCRIPTION as DESCRIPT2_0_, author_.FIRST_NAME as FIRST3_0_, author_.LAST_NAME as LAST4_0_ from author author_ where author_.ID=?
+12:19:13.900 [main] DEBUG org.hibernate.SQL - select category_.id, category_.name as name2_3_ from category category_ where category_.id=?
+Hibernate: select category_.id, category_.name as name2_3_ from category category_ where category_.id=?
+12:19:13.902 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+12:19:13.902 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+12:19:13.902 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+12:19:13.902 [main] DEBUG o.h.engine.internal.Collections - Collection dereferenced: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.903 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 2 deletions to 2 objects
+12:19:13.903 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 1 removals to 1 collections
+12:19:13.903 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+12:19:13.904 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Book{id=1, category=rseg105.project2.part1.models.Category#1, title=A New Book, authors=[rseg105.project2.part1.models.Author#100]}
+12:19:13.904 [main] DEBUG o.h.internal.util.EntityPrinter - rseg105.project2.part1.models.Author{firstname=Bradley, description=My First, id=100, lastname=Hadly}
+12:19:13.904 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Deleting collection: [rseg105.project2.part1.models.Book.authors#1]
+12:19:13.904 [main] DEBUG org.hibernate.SQL - delete from author_book where BOOK_ID=?
+Hibernate: delete from author_book where BOOK_ID=?
+12:19:13.905 [main] DEBUG o.h.p.c.AbstractCollectionPersister - Done deleting collection
+12:19:13.905 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.922 [main] DEBUG org.hibernate.SQL - delete from author where ID=?
+Hibernate: delete from author where ID=?
+12:19:13.923 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.923 [main] DEBUG org.hibernate.SQL - delete from book where id=?
+Hibernate: delete from book where id=?
+12:19:13.924 [main] DEBUG o.h.e.j.batch.internal.BatchingBatch - Executing batch size: 1
+12:19:13.987 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+12:19:13.987 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+12:19:13.988 [main] DEBUG o.h.e.j.internal.JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+12:19:13.988 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+12:19:13.988 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection

@@ -15,10 +15,8 @@ CREATE TABLE IF NOT EXISTS `RSEG105`.`book` (
     `title` VARCHAR(500) NULL,
     `price` DECIMAL(4 , 2 ) NULL,
     PRIMARY KEY (`id`),
-    INDEX `BOOKcategory_idx` (`category_id` ASC),
-    CONSTRAINT `BOOKcategory` FOREIGN KEY (`category_id`)
-        REFERENCES `RSEG105`.`category` (`id`)
-        ON DELETE CASCADE ON UPDATE CASCADE
+    INDEX `BOOKcategory_idx` (`category_id` ASC)
+  
 )  ENGINE=INNODB;
 
 CREATE TABLE IF NOT EXISTS `RSEG105`.`author` (
@@ -31,14 +29,8 @@ CREATE TABLE IF NOT EXISTS `RSEG105`.`author` (
 
 CREATE TABLE IF NOT EXISTS `RSEG105`.`author_book` (
     `AUTHOR_ID` INT NOT NULL,
-    `BOOK_ID` INT NULL,
-    CONSTRAINT `authorbook_author` FOREIGN KEY (`AUTHOR_ID`)
-        REFERENCES `RSEG105`.`BOOK` (`id`)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-	CONSTRAINT `authorbook_book` FOREIGN KEY (`BOOK_ID`)
-        REFERENCES `RSEG105`.`BOOK` (`id`)
-        ON DELETE CASCADE ON UPDATE CASCADE
+    `BOOK_ID` INT NULL
+  
 )  ENGINE=INNODB;
 
 INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (1,'Brad', 'Hardwick','Author 1');

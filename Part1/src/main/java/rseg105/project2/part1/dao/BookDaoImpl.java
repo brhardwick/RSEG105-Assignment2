@@ -43,4 +43,17 @@ public class BookDaoImpl implements BookDao {
 		return (Book) sessionFactory.getCurrentSession().createQuery("from Book b where b.id = :id").setParameter("id", Id).uniqueResult();
 		
 	}
+
+	@Override
+	public void delete(Book book) {
+		sessionFactory.getCurrentSession().delete(book);		
+	}
+
+	@Override
+	public Book save(Book book) {
+		sessionFactory.getCurrentSession().saveOrUpdate(book);
+		return book;
+	}
+	
+	
 }
