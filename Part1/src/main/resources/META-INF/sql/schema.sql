@@ -1,4 +1,4 @@
-DROP DATABASE RSEG105;
+﻿DROP DATABASE RSEG105;
 CREATE DATABASE RSEG105;
 
 
@@ -33,9 +33,13 @@ CREATE TABLE IF NOT EXISTS `RSEG105`.`author_book` (
   
 )  ENGINE=INNODB;
 
-INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (1,'Brad', 'Hardwick','Author 1');
-INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (2,'John', 'Doe','Author 1');
-INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (3,'Jane', 'Dez','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (1,'Caleb', 'Scharf','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (2,'Sean','Callery','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (3,'Miranda','Smith','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (4,'F. Scott','Fitzgerald','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (5,'Harper','Lee','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (6,'J. Kenji','López‑Alt','Author 1');
+INSERT INTO `RSEG105`.`AUTHOR` (ID,FIRST_NAME,LAST_NAME,DESCRIPTION) VALUES (7,'George G. M.','James','Author 1');
 
 INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (1, 'Classics');
 INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (2, 'CookBOOKs');
@@ -43,7 +47,6 @@ INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (3, 'Science');
 INSERT INTO `RSEG105`.`category` (`id`, `name`) VALUES (4, 'History');
 
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (1, 3, '0374715718', 'The Zoomable Universe', 18.30);
-INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (2, 3, '4567-6434', '1426218648', 27.19);
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (3, 3, '0545947197', 'Rocks, Minerals & Gems', 13.99);
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (4, 1, '0743273567', 'The Great Gatsby', 12.00);
 INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VALUES (5, 1, '0060935464', 'To Kill a Mockingbird', 5.89);
@@ -52,5 +55,8 @@ INSERT INTO `RSEG105`.`BOOK` (`id`, `category_id`, `isbn`, `title`, `price`) VAL
 
 INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (1,1);
 INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (2,1);
-INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (3,1);
-INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (1,2);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (3,3);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (4,4);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (5,5);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (6,6);
+INSERT INTO `RSEG105`.`author_book` (`AUTHOR_ID`,`BOOK_ID`) VALUES (7,7);
