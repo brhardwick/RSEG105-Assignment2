@@ -1,0 +1,10 @@
+rseg105\project2\part1\dao\BookDao.class
+rseg105\project2\part1\app\Main.class
+rseg105\project2\part1\models\Author.class
+rseg105\project2\part1\models\Book.class
+rseg105\project2\part1\app\Tests.class
+rseg105\project2\part1\dao\BookDaoImpl.class
+rseg105\project2\part1\models\Category.class
+rseg105\project2\part1\dao\CategoryDao.class
+rseg105\project2\part1\dao\CategoryDaoImpl.class
+rseg105\project2\part1\domain\Main.class
