@@ -1,5 +1,7 @@
 package rseg105.project2.part3.models;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,27 +9,24 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
-import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.SqlResultSetMapping;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "book")
-@NamedQueries({
-		@NamedQuery(name = "Book.getAll", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category"),
-		@NamedQuery(name = "Book.getById", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category where b.id = :id") })
 @SqlResultSetMapping(name = "bookResult", entities = @EntityResult(entityClass = Book.class))
 public class Book {
 
 	private Long id;
 	private String title;
+	private String isbn;
+	private double price;
 	private Set<Author> authors = new HashSet<Author>();
 	private Category category;
 
@@ -41,6 +40,7 @@ public class Book {
 	}
 
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "id")
 	public Long getId() {
 		return id;
@@ -51,7 +51,7 @@ public class Book {
 	}
 
 	public String toString() {
-		return "Book: { ID:" + this.id + ", Title: " + this.title + "} ";
+		return "Book: { ID:" + this.id + ", Title: " + this.title + ", Price: " + this.price + ", ISBN: "+this.isbn + "} ";
 	}
 
 	@ManyToMany(cascade = CascadeType.ALL)
@@ -72,7 +72,7 @@ public class Book {
 		getAuthors().remove(Author);
 	}
 
-	@ManyToOne(cascade = CascadeType.MERGE )
+	@ManyToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name = "CATEGORY_ID")
 	public Category getCategory() {
 		return category;
@@ -80,6 +80,24 @@ public class Book {
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	@Column(name = "isbn")
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	@Column(name = "price")
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double d) {
+		this.price = d;
 	}
 
 }

@@ -1,14 +1,13 @@
 package rseg105.project2.part3.app;
 
-import java.util.List;
-import java.util.Set;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import rseg105.project2.part3.services.*;
-import rseg105.project2.part3.models.*;
+import rseg105.project2.part3.models.Author;
+import rseg105.project2.part3.models.Book;
+import rseg105.project2.part3.services.BookService;
+import rseg105.project2.part3.services.CategoryService;
 
 public class Driver {
 	public static Logger logger = LoggerFactory.getLogger(Driver.class);
@@ -16,7 +15,6 @@ public class Driver {
 	private GenericXmlApplicationContext ctx;
 	private BookService bookServices;
 	private CategoryService categoryServices;
-
 	public Driver() {
 		ctx = new GenericXmlApplicationContext();
 		ctx.load("classpath:META-INF/spring/app-context-annotation.xml");
@@ -26,76 +24,36 @@ public class Driver {
 		categoryServices = ctx.getBean("CategoryService", CategoryService.class);
 	}
 
-	public void listAllBooks() {
-		printAllBooks(bookServices.findAll());
-	}
-
-	public void listSpecificBookWithDetail() {
+	public long insertBook() {
+		logger.info("Inserting a book with the title 'A New Book' by 'John Doe':");
+		logger.info("----------------------------------------------------");
+		Book NewBook = new Book();
+		NewBook.setTitle("A New Book");
+		NewBook.setIsbn("123456789");
+		NewBook.setPrice((double)50.23);
+		NewBook.setCategory(categoryServices.getByID(1));
 		
-		bookServices.listSpecificBookWithDetail();
+		Author author1 = new Author();
+		author1.setDescription("The First one");
+		author1.setFirstname("John");
+		author1.setLastname("Doe");
+		NewBook.addAuthor(author1);
+		Book savedBook = bookServices.insertBook(NewBook);
+		return savedBook.getId();
+	}
+	
+	public void deleteBook(long id) {
+		logger.info("Deleting a book with id of "+ id + ":");
+		logger.info("----------------------------------------------------");
+		bookServices.deleteBook(bookServices.findByID(id));		
+	}
+	public void listAllBooks() {
+		bookServices.listAllBooks();
 	}
 
-	public void printAllBooks(List<Book> books) {
-
-		logger.info("------------------------------");
-		logger.info("Books without Details:");
-		logger.info("------------------------------");
-		for (Book book : books) {
-			logger.info(book.toString());
-			logger.info("          ---                 ");
-		}
+	public void listSpecificBookWithDetail(long id) {		
+		bookServices.listBook(id);
 	}
 
-	public void printAllBooksWithAuthors(List<Book> books) {
-
-		logger.info("------------------------------");
-		logger.info("Books with details:");
-		logger.info("------------------------------");
-		for (Book book : books) {
-			logger.info(book.toString());
-
-			Set<Author> authors = book.getAuthors();
-			if (authors != null) {
-				for (Author author : authors) {
-					logger.info(author.toString());
-				}
-			}
-			Category category = book.getCategory();
-			if (category != null) {
-				logger.info(category.toString());
-			}
-			logger.info("          ---                 ");
-		}
-	}
-
-	public void deleteBook(Book book) {
-
-	}
-
-	public void printSingleBookWithDetails(Book book) {
-
-		if (book == null) {
-			logger.info("------------------------------");
-			logger.info("Could not find the book");
-			logger.info("------------------------------");
-
-		}
-		logger.info("------------------------------");
-		logger.info("Book with detail:");
-		logger.info("------------------------------");
-
-		logger.info(book.toString());
-
-		Set<Author> authors = book.getAuthors();
-		if (authors != null) {
-			for (Author author : authors) {
-				logger.info(author.toString());
-			}
-		}
-		Category category = book.getCategory();
-		if (category != null) {
-			logger.info(category.toString());
-		}
-		logger.info("          ---                 ");
-	}
+	
 }

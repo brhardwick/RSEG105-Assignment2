@@ -3,24 +3,17 @@ package rseg105.project2.part3.services;
 import java.util.List;
 import java.util.Set;
 
-import javax.annotation.Resource;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.TypedQuery;
-
-import org.hibernate.SessionFactory;
-import org.hibernate.annotations.Proxy;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import rseg105.project2.part3.models.*;
+import rseg105.project2.part3.models.Author;
+import rseg105.project2.part3.models.Book;
+import rseg105.project2.part3.models.Category;
 import rseg105.project2.part3.repositories.BookRepository;
-
-import java.util.List;
 
 @Service("BookService")
 @Repository
@@ -40,15 +33,21 @@ public class BookServiceImpl implements BookService {
 	}
 
 	@Override
-	public Book findByID(Long Id) {
+	public Book findByID(long Id) {
 		Book book = bookRepository.findOne(Id);
 		return book;
 	}
-	
+
 	@Transactional
 	@Override
-	public void listSpecificBookWithDetail() {
-		printSingleBookWithDetails(this.findByID((long) 1));
+	public void listBook(long id) {
+		printSingleBookWithDetails(this.findByID(id));
+	}
+
+	@Transactional
+	@Override
+	public void listAllBooks() {
+		printBooksWithDetails(this.findAll());
 	}
 
 	public void printSingleBookWithDetails(Book book) {
@@ -57,26 +56,63 @@ public class BookServiceImpl implements BookService {
 			logger.info("------------------------------");
 			logger.info("Could not find the book");
 			logger.info("------------------------------");
+			return;
 
 		}
+
+		Set<Author> authors = book.getAuthors();
+		Category category = book.getCategory();
+
 		logger.info("------------------------------");
 		logger.info("Book with detail:");
 		logger.info("------------------------------");
-
 		logger.info(book.toString());
 
-		Set<Author> authors = book.getAuthors();
 		if (authors != null) {
 			for (Author author : authors) {
 				logger.info(author.toString());
 			}
 		}
-		Category category = book.getCategory();
 		if (category != null) {
 			logger.info(category.toString());
 		}
 		logger.info("          ---                 ");
 	}
 
+	public void printBooksWithDetails(List<Book> books) {
+
+		logger.info("------------------------------");
+		logger.info("Books with details:");
+		logger.info("------------------------------");
+		for (Book book : books) {
+
+			Set<Author> authors = book.getAuthors();
+			Category category = book.getCategory();
+
+			logger.info(book.toString());
+			if (authors != null) {
+				for (Author author : authors) {
+					logger.info(author.toString());
+				}
+			}
+
+			if (category != null) {
+				logger.info(category.toString());
+			}
+			logger.info("          ---                 ");
+		}
+	}
+
+	@Override
+	public void deleteBook(Book book) {
+		bookRepository.delete(book);
+	}
+
+	@Override
+	public Book insertBook(Book book) {
+		return bookRepository.save(book);
+		
+
+	}
 
 }
