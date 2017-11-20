@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
@@ -31,15 +32,21 @@ public class BookServiceImpl implements BookService {
 	@Override
 	@Transactional(readOnly = true)
 	public List<Book> getAll() {
-		List<Book> books = em.createNamedQuery("Book.getAll", Book.class).getResultList();
+		List<Book> books = em.createNamedQuery("Book.findAll", Book.class).getResultList();
 		return books;
 	}
 
 	@Override
 	public Book getByID(int Id) {
-		TypedQuery<Book> query = em.createNamedQuery("Book.getById", Book.class);
+		try {
+		TypedQuery<Book> query = em.createNamedQuery("Book.findById", Book.class);
 		query.setParameter("id", Id);
 		return query.getSingleResult();
+		}
+		catch (NoResultException ex)
+		{
+			return null;
+		}
 	}
 
 	@Override

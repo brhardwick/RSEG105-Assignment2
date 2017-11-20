@@ -4,9 +4,7 @@ rseg105\project2\part3\repositories\BookRepository.class
 rseg105\project2\part3\models\Author.class
 rseg105\project2\part3\services\BookServiceImpl.class
 rseg105\project2\part3\app\Driver.class
-META-INF\maven\rseg105.project2.part3\Assignment2.3\pom.xml
 rseg105\project2\part3\services\BookService.class
 rseg105\project2\part3\models\Category.class
-META-INF\maven\rseg105.project2.part3\Assignment2.3\pom.properties
 rseg105\project2\part3\models\Book.class
 rseg105\project2\part3\services\CategoryServiceImpl.class

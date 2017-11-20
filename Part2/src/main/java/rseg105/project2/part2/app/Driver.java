@@ -23,7 +23,7 @@ public class Driver {
 
 		ctx.refresh();
 		bookServices = ctx.getBean("BookService", BookService.class);
-		categoryServices = ctx.getBean("CategoryService",CategoryService.class);
+		categoryServices = ctx.getBean("CategoryService", CategoryService.class);
 	}
 
 	public void listAllBooks() {
@@ -36,16 +36,14 @@ public class Driver {
 
 	}
 
-	public void listSpecificBookWithDetail() {
-		printSingleBookWithDetails(bookServices.getByID(2));
+	public void listSpecificBookWithDetail(int id) {
+		printSingleBookWithDetails(bookServices.getByID(id));
 	}
-	
-	public void insertNewBook()
-	{
-		printAllBooksWithAuthors(bookServices.getAll());
+
+	public int insertNewBook() {
 
 		Book ToAdd = new Book();
-		ToAdd.setId(100);
+
 		ToAdd.setTitle("A New Book with a Science category");
 		ToAdd.setCategory(categoryServices.getByID(1));
 
@@ -53,26 +51,26 @@ public class Driver {
 		author1.setDescription("First Author");
 		author1.setFirstname("Bradley");
 		author1.setLastname("Hardwick");
-		author1.setId(700);
-		
+
 		Author author2 = new Author();
 		author2.setDescription("Second Author");
 		author2.setFirstname("John");
 		author2.setLastname("Doe");
-		author2.setId(800);
-		
+
 		ToAdd.addAuthor(author1);
 		ToAdd.addAuthor(author2);
 
-		bookServices.insert(ToAdd);
-		printSingleBookWithDetails(bookServices.getByID(100));
+		Book NewBook = bookServices.insert(ToAdd);
 
+		return NewBook.getId();
 	}
-	
-	public void Driver_DeleteaBook()
-	{
-		Book ToDelete = bookServices.getByID(100);
-		bookServices.delete(ToDelete);	
+
+	public void deleteBook(int id) {
+		logger.info("------------------------------");
+		logger.info("Deleting a book with id " + id + ":");
+		logger.info("------------------------------");
+		Book ToDelete = bookServices.getByID(id);
+		bookServices.delete(ToDelete);
 
 	}
 
@@ -109,14 +107,14 @@ public class Driver {
 		}
 	}
 
-	public void deleteBook(Book book) {
-
-	}
-
 	public void printSingleBookWithDetails(Book book) {
 
-		if (book == null)
+		if (book == null) {
+			logger.info("------------------------------");
+			logger.info("Book is null:");
+			logger.info("------------------------------");
 			return;
+		}
 		logger.info("------------------------------");
 		logger.info("Book with detail:");
 		logger.info("------------------------------");

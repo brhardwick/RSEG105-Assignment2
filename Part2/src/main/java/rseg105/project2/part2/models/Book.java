@@ -1,5 +1,8 @@
 package rseg105.project2.part2.models;
 
+
+import static javax.persistence.GenerationType.IDENTITY;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,7 +10,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
-import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -21,8 +24,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "book")
 @NamedQueries({
-		@NamedQuery(name = "Book.getAll", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category"),
-		@NamedQuery(name = "Book.getById", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category where b.id = :id") })
+		@NamedQuery(name = "Book.findAll", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category"),
+		@NamedQuery(name = "Book.findById", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category where b.id = :id") })
 @SqlResultSetMapping(name = "bookResult", entities = @EntityResult(entityClass = Book.class))
 public class Book {
 
@@ -41,6 +44,7 @@ public class Book {
 	}
 
 	@Id
+	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "id")
 	public int getId() {
 		return id;
