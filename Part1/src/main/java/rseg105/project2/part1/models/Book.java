@@ -1,39 +1,33 @@
 package rseg105.project2.part1.models;
 
-import java.io.Serializable;
-import java.util.Date;
+import static javax.persistence.GenerationType.IDENTITY;
+
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.Version;
-
-import org.hibernate.annotations.Proxy;
-import org.springframework.transaction.annotation.Transactional;
-
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.OneToMany;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.JoinTable;
-import javax.persistence.JoinColumn;
-import javax.persistence.CascadeType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
-@Entity 
+@Entity
 @Table(name = "book")
-@NamedQueries({ @NamedQuery(name = "Book.getAll", query = "from Book") })
+@NamedQueries({
+		@NamedQuery(name = "Book.findAll", query = "select distinct b from Book b left join fetch b.authors a left join fetch b.category c") })
 public class Book {
 
 	private int id;
-	private int category_id;
 	private String title;
+	private double price; 
+	private String isbn;
 	private Set<Author> authors = new HashSet<Author>();
 	private Category category;
 
@@ -48,6 +42,7 @@ public class Book {
 
 	@Id
 	@Column(name = "id")
+	@GeneratedValue(strategy = IDENTITY)
 	public int getId() {
 		return id;
 	}
@@ -56,36 +51,30 @@ public class Book {
 		this.id = id;
 	}
 
-	public String toString()
-	{
-		return "Book: { ID:"+this.id + ", Title: " + this.title + "} "; 
+	public String toString() {
+		return "Book: { ID:" + this.id + ", Title: " + this.title + ", Price: " + this.price + ", ISBN: "+this.isbn + "} ";
 	}
 
-	
-
-	  @ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-	    @JoinTable(name = "author_book",
-	        joinColumns = @JoinColumn(name = "BOOK_ID"),
-	        inverseJoinColumns = @JoinColumn(name = "AUTHOR_ID"))
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "BOOK_ID"), inverseJoinColumns = @JoinColumn(name = "AUTHOR_ID"))
 	public Set<Author> getAuthors() {
 		return authors;
 	}
-	  
+
 	public void setAuthors(Set<Author> authors) {
 		this.authors = authors;
 	}
-	
+
 	public void addAuthor(Author Author) {
-        getAuthors().add(Author);
-    }
-    
-    public void removeAuthor(Author Author) {
-        getAuthors().remove(Author);
-    }
+		getAuthors().add(Author);
+	}
 
+	public void removeAuthor(Author Author) {
+		getAuthors().remove(Author);
+	}
 
-	 @ManyToOne
-	 @JoinColumn(name = "CATEGORY_ID")
+	@ManyToOne
+	@JoinColumn(name = "CATEGORY_ID")
 	public Category getCategory() {
 		return category;
 	}
@@ -94,4 +83,22 @@ public class Book {
 		this.category = category;
 	}
 
+	@Column(name = "price")
+	public double getPrice() {
+		return price;
 	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	@Column(name = "isbn")
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+}

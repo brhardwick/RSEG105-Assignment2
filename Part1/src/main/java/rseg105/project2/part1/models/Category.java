@@ -1,27 +1,18 @@
 package rseg105.project2.part1.models;
 
-import java.io.Serializable;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Column;
-import javax.persistence.Version;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.OneToMany;
-import javax.persistence.ManyToMany;
-import javax.persistence.JoinTable;
-import javax.persistence.JoinColumn;
+
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
-@Entity // means Contact is a mapped entity class
+@Entity
 @Table(name = "category")
 @NamedQueries({ @NamedQuery(name = "Category.findById", query = "from Category c where c.id = :id") })
 public class Category {
